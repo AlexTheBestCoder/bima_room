@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 .slide-1 p,
 .slide-2 p,
 .slide-3 p {
@@ -23,6 +23,7 @@
     position: relative;
     left: 40vh;
     font-size: 45px;
+    font-family: 'Roboto Slab', serif;
     color: white;
     text-transform: uppercase;
 }
@@ -234,14 +235,27 @@ footer {
     .slide-2 p, 
     .slide-3 p {
         font-size: 40px;
+        position: relative;
+        left: 20vh;
         color: white;
         text-transform: uppercase;
+    }
+    .slide-1 a,
+    .slide-2 a,
+    .slide-3 a {
+        top: 28vh;
+        position: relative;
+        left: 20vh;
+
     }
 }
 
 @media screen and (max-width: 900px) {
     .best-products .product-list img {
         height: 40vh;
+    }
+    .slide-3 {
+        background-position: center;
     }
 
     .slide-1 p,
@@ -307,7 +321,7 @@ footer {
     .slide-1 a,
     .slide-2 a,
     .slide-3 a {
-        display: none;
+        left: 10vh;
     }
     .slide-1 p,
     .slide-2 p,
@@ -336,8 +350,8 @@ footer {
         width: 45vh;
     }
     .slide-3 {
-        display: none;
-        background-image: url('../assets/slide-bg-2.jpg');
+        background-size: cover;
+        background-position: top;
     }
     .best-products {
         height: 270vh;

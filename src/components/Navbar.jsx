@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from '../assets/logo.jpg';
+import logo from "../assets/logo.jpg";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="flex items-center justify-between p-4 bg-white">
       <div className="flex items-center">
-        <img src={logo} alt="Logo" style={{ height: '9vh'}} />
+        <img src={logo} alt="Logo" style={{ height: "9vh" }} />
       </div>
       <div className="md:hidden">
         {/* Affiche le menu burger sur les petits écrans */}
@@ -20,7 +20,10 @@ export default function Navbar() {
           className="text-white hover:text-gray-300 focus:outline-none"
           onClick={handleMenuToggle}
         >
-          <svg className="h-6 w-6 fill-current stroke-black" viewBox="0 0 24 24">
+          <svg
+            className="h-6 w-6 fill-current stroke-black"
+            viewBox="0 0 24 24"
+          >
             {isMenuOpen ? (
               <path
                 d="M6 6L18 18M6 18L18 6"
@@ -39,24 +42,41 @@ export default function Navbar() {
           </svg>
         </button>
       </div>
-      <ul className={`md:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col md:flex-row md:space-x-4 mt-4 md:mt-0`}>
+      <ul
+        className={`md:flex ${
+          isMenuOpen ? "flex" : "hidden"
+        } flex-col md:flex-row md:space-x-4 mt-4 md:mt-0 `}
+        style={{position: 'relative', left: '0.5rem', fontSize: '14px'}}
+      >
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-300">Acheter</a>
+          <a href="/" className="text-yellow-600 hover:text-yellow-300">
+            Acheter
+          </a>
         </li>
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-900">Press On Nails</a>
+          <a href="/" className="text-yellow-600 hover:text-yellow-900">
+            Press On Nails
+          </a>
         </li>
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-900">Lips booster crème</a>
+          <a href="/" className="text-yellow-600 hover:text-yellow-900">
+            Lips booster crème
+          </a>
         </li>
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-900">Blog</a>
+          <a href="/" className="text-yellow-600 hover:text-yellow-900">
+            Blog
+          </a>
         </li>
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-900">À propos</a>
+          <a href="/" className="text-yellow-600 hover:text-yellow-900">
+            À propos
+          </a>
         </li>
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-900">Contact</a>
+          <a href="/" className="text-yellow-600 hover:text-yellow-900">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
