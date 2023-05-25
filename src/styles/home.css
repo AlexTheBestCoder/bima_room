@@ -281,15 +281,14 @@ footer {
 
 @media screen and (max-width: 720px) {
     footer {
-        padding: 2vh;
-        height: 90vh;
+        height: 50vh;
         justify-content: space-between;
     }
     .address-container {
         flex-direction: column;
     }
     .address-container .box-container {
-        padding: 10vh;
+        padding: 6vh;
         border: none;
     }
     .slide-1 p,
@@ -318,10 +317,14 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    .slide-1 a,
-    .slide-2 a,
+   
+    .slide-2 a{
+        top: 35vh;
+        left: 3vh;
+    }
     .slide-3 a {
-        left: 10vh;
+        top: 30vh;
+        left: 3vh;
     }
     .slide-1 p,
     .slide-2 p,

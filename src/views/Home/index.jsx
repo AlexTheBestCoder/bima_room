@@ -86,7 +86,7 @@ export default function Home() {
       <div className="press-on-nails">
         <div className="box-content">
           <p>
-            / Ongles parfait <br /> Main irrésistibles
+             Ongles parfaits / <br /> Main irrésistibles
           </p>
           <p>#Optez pour nos press on nails</p>
           <Link>Achetez</Link>
@@ -111,7 +111,7 @@ export default function Home() {
       <div className="lips-booster-creme">
         <div className="box-content">
           <p>
-            / Lèvres captivante <br /> Séduction absolue
+             Lèvres captivante /<br /> Séduction absolue
           </p>
 
           <p>#Choisissez nos lips booster crème</p>
@@ -122,18 +122,15 @@ export default function Home() {
         <div className="address-container">
           <div className="address box-container">
             <p style={{ fontSize: "20px" }}>ADDRESS</p>
-            <br />
             <p>Cocody, Angré</p>
           </div>
           <div className="contact box-container">
             <p style={{ fontSize: "20px" }}>CONTACT</p>
-            <br />
             <p>Tel: 0747650257</p>
             <p>Email: contact@bimaroom.com</p>
           </div>
           <div className="opening-hours box-container">
             <p style={{ fontSize: "20px" }}>HORAIRES D'OUVERTURES</p>
-            <br />
             <p>Du lundi au samedi</p>
             <p>De 10h à 20h</p>
           </div>
