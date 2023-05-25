@@ -7,9 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 import ongles_img_1 from "../../assets/ongles1.jpg";
 import ongles_img_2 from "../../assets/ongles2.jpeg";
 import ongles_img_3 from "../../assets/ongles3.jpg";
-import snapchat_logo from "../../assets/snapchat_logo.png"
-import facebook_logo from "../../assets/facebook_logo.png"
-import instagram_logo from "../../assets/instagram_logo.png"
+import snapchat_logo from "../../assets/snapchat_logo.png";
+import facebook_logo from "../../assets/facebook_logo.png";
+import instagram_logo from "../../assets/instagram_logo.png";
 import "../../styles/home.css";
 
 export default function Home() {
@@ -113,7 +113,7 @@ export default function Home() {
           <p>
             / Lèvres captivante <br /> Séduction absolue
           </p>
-        
+
           <p>#Choisissez nos lips booster crème</p>
           <Link>Achetez</Link>
         </div>
@@ -123,32 +123,29 @@ export default function Home() {
           <div className="address box-container">
             <p style={{ fontSize: "20px" }}>ADDRESS</p>
             <br />
-            <p>500 Terry Francine Street</p>
-            <p>San Francisco, CA 94158</p>
+            <p>Cocody, Angré</p>
           </div>
           <div className="contact box-container">
             <p style={{ fontSize: "20px" }}>CONTACT</p>
             <br />
-            <p>Tel: 123-456-7890</p>
-            <p>Fax: 123-456-7890</p>
-            <p>Email: info@mysite.com</p>
+            <p>Tel: 0747650257</p>
+            <p>Email: contact@bimaroom.com</p>
           </div>
           <div className="opening-hours box-container">
-            <p style={{ fontSize: "20px" }}>OPENING HOURS</p>
+            <p style={{ fontSize: "20px" }}>HORAIRES D'OUVERTURES</p>
             <br />
-            <p>Mon-Thurs: 9:00am-8:00pm</p>
-            <p>Fri: 9:00am-8:00pm</p>
-            <p>Sunday: 9:00am-3:00pm</p>
+            <p>Du lundi au samedi</p>
+            <p>De 10h à 20h</p>
           </div>
         </div>
         <div className="social-media-icons">
-          <a href="lien_vers_facebook">
+          <a href="https://www.facebook.com/profile.php?id=100021732518907&mibextid=LQQJ4d">
             <img src={facebook_logo} alt="Facebook" />
           </a>
-          <a href="lien_vers_instagram">
+          <a href="https://instagram.com/caprice_bysasha?igshid=MzRlODBiNWFlZA==">
             <img src={instagram_logo} alt="Instagram" />
           </a>
-          <a href="/">
+          <a href="https://t.snapchat.com/Qxxoc7iX">
             <img src={snapchat_logo} alt="Twitter" />
           </a>
         </div>
