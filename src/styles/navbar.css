@@ -22,7 +22,7 @@
     color: white;
 }
 .navbar-logo img {
-    height: 100px;
+    height: 12vh;
 }
 .navbar-links a {
     text-transform: uppercase;
@@ -38,5 +38,14 @@
 @media screen and (max-width: 900px) {
     .navbar-links {
         display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .navbar {
+        padding-left: 0;
+        padding-right: 2vh;
+    }
+    .navbar-logo img {
+        height: 10vh;
     }
 }

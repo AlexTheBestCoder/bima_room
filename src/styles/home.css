@@ -69,6 +69,7 @@
 .best-products {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: space-around;
     height: 100vh;
@@ -80,6 +81,7 @@
 }
 
 .best-products p h6 {
+    font-size: 23px;
     text-align: center;
     color: #d39932;
 }
@@ -111,7 +113,6 @@
 
 .best-products .product-list .product h4 {
     text-align: center;
-    max-width: 21vw;
 }
 
 .best-products .product-list .product p {
@@ -124,6 +125,7 @@
 .press-on-nails {
     height: 100vh;
     background-image: url('../assets/b3d2a5f91121434bb73a96041b57b6d9.webp');
+    background-size: cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -135,7 +137,6 @@
     text-align: center;
     color: #d39932;
     position: relative;
-    bottom: 18vh;
     background-color: white;
     justify-content: space-evenly;
     align-items: center;
@@ -143,7 +144,9 @@
     height: 50vh;
     width: 50vh;
 }
-
+.press-on-nails .box-content p {
+    font-size: 2.5vh;
+}
 .press-on-nails .box-content a {
     text-transform: uppercase;
     font-size: 2.5vh;
@@ -158,7 +161,6 @@
     background-image: url('../assets/levre-bg.jpeg');
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,14 +170,15 @@
     display: flex;
     text-align: center;
     color: #d39932;
-    position: relative;
-    bottom: 18vh;
     background-color: white;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     height: 50vh;
     width: 50vh;
+}
+.lips-booster-creme .box-content p {
+    font-size: 2.5vh;
 }
 
 .lips-booster-creme .box-content a {
@@ -212,17 +215,23 @@ footer {
 
 .social-media-icons {
     display: flex;
-    width: 15rem;
+    width: 10rem;
     justify-content: space-between;
 }
 
 @media screen and (max-width: 1100px) {
+    .press-on-nails {
+        background-size: contain;
+    }
+    .lips-booster-creme {
+        background-size: contain;
+    }
     .best-products .product-list img {
         height: 50vh;
     }
 
     .slide-1 p,
-    .slide-2 p,
+    .slide-2 p, 
     .slide-3 p {
         font-size: 40px;
         color: white;
@@ -300,12 +309,25 @@ footer {
     .slide-3 a {
         display: none;
     }
-}
-@media screen and (max-width: 500px) {
     .slide-1 p,
     .slide-2 p,
     .slide-3 p {
+       left: 10vh;
+    }
+}
+@media screen and (max-width: 500px) {
+    /* .slide-1 p,
+    .slide-2 p,
+    .slide-3 p {
         display: none;
+    } */
+    .lips-booster-creme .box-content {
+        height: 45vh;
+        width: 45vh;
+    }
+    .press-on-nails .box-content {
+        height: 45vh;
+        width: 45vh;
     }
     .slide-3 {
         display: none;
@@ -319,7 +341,14 @@ footer {
     } 
 }
 @media screen and (max-width: 400px) {
-    
+    .lips-booster-creme .box-content {
+        height: 39.5vh;
+        width: 39.5vh;
+    }
+    .press-on-nails .box-content {
+        height: 39.5vh;
+        width: 39.5vh;
+    }
 }
 /*
 footer {

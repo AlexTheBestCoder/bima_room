@@ -85,11 +85,10 @@ export default function Home() {
       </div> */}
       <div className="press-on-nails">
         <div className="box-content">
-          <h1>
+          <p>
             / Ongles parfait <br /> Main irrésistibles
-          </h1>
-          <br />
-          <h2>#Optez pour nos press on nails</h2>
+          </p>
+          <p>#Optez pour nos press on nails</p>
           <Link>Achetez</Link>
         </div>
       </div>
@@ -111,11 +110,11 @@ export default function Home() {
       </div>
       <div className="lips-booster-creme">
         <div className="box-content">
-          <h1>
+          <p>
             / Lèvres captivante <br /> Séduction absolue
-          </h1>
-          <br />
-          <h2>#Choisissez nos lips booster crème</h2>
+          </p>
+        
+          <p>#Choisissez nos lips booster crème</p>
           <Link>Achetez</Link>
         </div>
       </div>
