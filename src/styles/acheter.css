@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 1cm;
+    padding-right: 1cm;
 }
 
 .product-list {
-    padding-left: 1cm;
-    padding-right: 1cm;
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10vh;
