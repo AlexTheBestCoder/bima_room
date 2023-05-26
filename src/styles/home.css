@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 .home-container {
     /* width: 100vw; */
 }
@@ -15,7 +16,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
 .slide-1 p,
 .slide-2 p,
 .slide-3 p {

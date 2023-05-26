@@ -6,11 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ongles_img_1 from "../../assets/ongles1.jpg";
 import ongles_img_2 from "../../assets/ongles2.jpeg";
-import ongles_img_3 from "../../assets/ongles3.jpg";
-import snapchat_logo from "../../assets/snapchat_logo.png";
-import facebook_logo from "../../assets/facebook_logo.png";
-import instagram_logo from "../../assets/instagram_logo.png";
+import kit_lips_booster from "../../assets/kit_lips_booster.jpg";
 import "../../styles/home.css";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   const products = [
@@ -23,9 +21,9 @@ export default function Home() {
     },
 
     {
-      name: "LIPS BOOSTER CRÈME",
+      name: "KIT LIPS BOOSTER CRÈME",
       price: "10000 F CFA",
-      image: ongles_img_3,
+      image: kit_lips_booster,
       isBestSeller: true,
       isQuickPreviewAvailable: true,
     },
@@ -86,7 +84,7 @@ export default function Home() {
       <div className="press-on-nails">
         <div className="box-content">
           <p>
-             Ongles parfaits / <br /> Main irrésistibles
+            Ongles parfaits / <br /> Main irrésistibles
           </p>
           <p>#Optez pour nos press on nails</p>
           <Link>Achetez</Link>
@@ -111,42 +109,14 @@ export default function Home() {
       <div className="lips-booster-creme">
         <div className="box-content">
           <p>
-             Lèvres captivante /<br /> Séduction absolue
+            Lèvres captivante /<br /> Séduction absolue
           </p>
 
           <p>#Choisissez nos lips booster crème</p>
           <Link>Achetez</Link>
         </div>
       </div>
-      <footer>
-        <div className="address-container">
-          <div className="address box-container">
-            <p style={{ fontSize: "20px" }}>ADDRESSE</p>
-            <p>Cocody, Angré</p>
-          </div>
-          <div className="contact box-container">
-            <p style={{ fontSize: "20px" }}>CONTACT</p>
-            <p>Tel: 0747650257</p>
-            <p>Email: contact@bimaroom.com</p>
-          </div>
-          <div className="opening-hours box-container">
-            <p style={{ fontSize: "20px" }}>HORAIRES D'OUVERTURES</p>
-            <p>Du lundi au samedi</p>
-            <p>De 10h à 20h</p>
-          </div>
-        </div>
-        <div className="social-media-icons">
-          <a href="https://www.facebook.com/profile.php?id=100021732518907&mibextid=LQQJ4d">
-            <img src={facebook_logo} alt="Facebook" />
-          </a>
-          <a href="https://instagram.com/caprice_bysasha?igshid=MzRlODBiNWFlZA==">
-            <img src={instagram_logo} alt="Instagram" />
-          </a>
-          <a href="https://t.snapchat.com/Qxxoc7iX">
-            <img src={snapchat_logo} alt="Twitter" />
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

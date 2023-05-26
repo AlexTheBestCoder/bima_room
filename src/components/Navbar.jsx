@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.jpg";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,9 +11,9 @@ export default function Navbar() {
 
   return (
     <nav className="flex items-center justify-between p-4 bg-white">
-      <div className="flex items-center">
+      <Link to={'/'} className="flex items-center">
         <img src={logo} alt="Logo" style={{ height: "9vh" }} />
-      </div>
+      </Link>
       <div className="md:hidden">
         {/* Affiche le menu burger sur les petits écrans */}
         <button
@@ -49,34 +50,34 @@ export default function Navbar() {
         style={{position: 'relative', left: '0.5rem', fontSize: '14px'}}
       >
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-300">
+          <Link to={'/acheter'} className="text-yellow-600 hover:text-yellow-900">
             Acheter
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-900">
+          <Link className="text-yellow-600 hover:text-yellow-900">
             Press On Nails
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-900">
+          <Link className="text-yellow-600 hover:text-yellow-900">
             Lips booster crème
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-900">
+          <Link className="text-yellow-600 hover:text-yellow-900">
             Blog
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-900">
+          <Link className="text-yellow-600 hover:text-yellow-900">
             À propos
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/" className="text-yellow-600 hover:text-yellow-900">
+          <Link className="text-yellow-600 hover:text-yellow-900">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
