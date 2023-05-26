@@ -319,7 +319,7 @@ footer {
 @media screen and (max-width: 600px) {
    
     .slide-2 a{
-        top: 35vh;
+        top: 30vh;
         left: 3vh;
     }
     .slide-3 a {
