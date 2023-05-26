@@ -90,6 +90,7 @@ export default function Home() {
           <Link>Achetez</Link>
         </div>
       </div>
+      <br /><br />
       <div className="best-products">
         <p>
           MEILLEURS VENTES <br /> <h6>CHEZ CAPRICE BEAUTY</h6>{" "}
@@ -106,6 +107,7 @@ export default function Home() {
         </div>
         <Link>ALLER À LA BOUTIQUE</Link>
       </div>
+      <br /><br />
       <div className="lips-booster-creme">
         <div className="box-content">
           <p>
