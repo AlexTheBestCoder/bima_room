@@ -211,7 +211,7 @@ footer {
     padding-right: 2vw;
     border-right: 1px solid #b56020;
     border-left: 1px solid #b56020;
-    height: 6rem;
+    height: max-content;
 }
 
 .social-media-icons {
@@ -282,13 +282,14 @@ footer {
 @media screen and (max-width: 720px) {
     footer {
         height: 50vh;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .address-container {
+        height: 17rem;
+        justify-content: space-between;
         flex-direction: column;
     }
     .address-container .box-container {
-        padding: 6vh;
         border: none;
     }
     .slide-1 p,
@@ -319,7 +320,7 @@ footer {
 @media screen and (max-width: 600px) {
    
     .slide-2 a{
-        top: 30vh;
+        top: 25vh;
         left: 3vh;
     }
     .slide-3 a {

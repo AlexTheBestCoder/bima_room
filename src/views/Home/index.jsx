@@ -121,7 +121,7 @@ export default function Home() {
       <footer>
         <div className="address-container">
           <div className="address box-container">
-            <p style={{ fontSize: "20px" }}>ADDRESS</p>
+            <p style={{ fontSize: "20px" }}>ADDRESSE</p>
             <p>Cocody, Angré</p>
           </div>
           <div className="contact box-container">
