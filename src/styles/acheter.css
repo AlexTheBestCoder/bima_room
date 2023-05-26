@@ -19,8 +19,8 @@
 }
 
 .product img {
-    width: 100%;
-    height: max-content;
+    width: 100vw;
+    max-height: auto;
     object-fit: cover;
 }
 
