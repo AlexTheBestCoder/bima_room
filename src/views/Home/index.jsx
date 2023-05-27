@@ -51,20 +51,21 @@ export default function Home() {
       <Slider {...settings} className="slide-container">
         <div className="slide-2">
           <p>
-            Une Manicure parfaite <br /> en un clin d'œil <br /> avec nos press
-            on nails <br /> tendance
+            Une Manicure parfaite <br /> en un clin d'œil <br /> avec nos{" "}
+            <span translate="no" style={{fontWeight: '900'}}>press on nails</span><br /> tendance
           </p>
-          <Link to="/content1" className="content-link">
-            ACHETER VOS PRESS ON NAILS
+          <Link to="/content1" className="content-link" style={{fontWeight: '900'}}>
+           ACHETER VOS {" "}<span translate="no" style={{fontWeight: '900'}}>PRESS ON NAILS</span>
           </Link>
         </div>
         <div className="slide-3">
           <p>
-            Des lèvres irrésistibles <br /> avec le kit LIPS BOOSTER CRÈME{" "}
+            Des lèvres irrésistibles <br /> avec le kit{" "}
+            <span translate="no" style={{fontWeight: '900'}}>LIPS BOOSTER</span>
             <br /> pour sublimer votre sourire.
           </p>
-          <Link to="/content2" className="content-link">
-            ACHETER VOS LIPS BOOSTER CRÈME
+          <Link to="/content2" className="content-link" style={{fontWeight: '900'}}>
+            ACHETER VOS {" "}<span translate="no" style={{fontWeight: '900'}}>LIPS BOOSTER</span> CRÈME
           </Link>
         </div>
       </Slider>
@@ -86,35 +87,40 @@ export default function Home() {
           <p>
             Ongles parfaits / <br /> Main irrésistibles
           </p>
-          <p>#Optez pour nos press on nails</p>
+          <p>
+            #Optez pour nos {" "}<span translate="no">press on nails</span>
+          </p>
           <Link>Achetez</Link>
         </div>
       </div>
-      <br /><br />
+      <br />
+      <br />
       <div className="best-products">
         <p>
-          MEILLEURS VENTES <br /> <h6>CHEZ CAPRICE BEAUTY</h6>{" "}
+          MEILLEURS VENTES <br /> <h6>CHEZ CAPRICE BEAUTY</h6>
         </p>
         <div className="product-list">
           {products.map((product, index) => (
             <div key={index} className="product">
               <img src={product.image} alt="" />
               <br />
-              <h4>{product.name}</h4>
+              <h4 translate="no">{product.name}</h4>
               <p>{product.price}</p>
             </div>
           ))}
         </div>
-        <Link>ALLER À LA BOUTIQUE</Link>
+        <Link to={"/boutique"}>ALLER À LA BOUTIQUE</Link>
       </div>
-      <br /><br />
+      <br />
+      <br />
       <div className="lips-booster-creme">
         <div className="box-content">
           <p>
             Lèvres captivante /<br /> Séduction absolue
           </p>
-
-          <p>#Choisissez nos lips booster crème</p>
+          <p>
+            #Choisissez nos {" "}<span translate="no">lips booster</span>{" "} crème
+          </p>
           <Link>Achetez</Link>
         </div>
       </div>

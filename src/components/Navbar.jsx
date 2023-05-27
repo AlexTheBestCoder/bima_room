@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex items-center justify-between p-4 bg-white">
-      <Link to={'/'} className="flex items-center">
+      <Link to={"/"} className="flex items-center">
         <img src={logo} alt="Logo" style={{ height: "9vh" }} />
       </Link>
       <div className="md:hidden">
@@ -47,27 +47,31 @@ export default function Navbar() {
         className={`md:flex ${
           isMenuOpen ? "flex" : "hidden"
         } flex-col md:flex-row md:space-x-4 mt-4 md:mt-0 `}
-        style={{position: 'relative', left: '0.5rem', fontSize: '14px'}}
+        style={{ position: "relative", left: "0.5rem", fontSize: "14px" }}
       >
         <li>
-          <Link to={'/acheter'} className="text-yellow-600 hover:text-yellow-900">
+          <Link
+            to={"/boutique"}
+            className="text-yellow-600 hover:text-yellow-900"
+          >
             Acheter
           </Link>
         </li>
         <li>
-          <Link className="text-yellow-600 hover:text-yellow-900">
+          <Link
+            className="text-yellow-600 hover:text-yellow-900"
+            translate="no"
+          >
             Press On Nails
           </Link>
         </li>
         <li>
           <Link className="text-yellow-600 hover:text-yellow-900">
-            Lips booster crème
+            <span translate="no">Lips booster</span>{" "} crème
           </Link>
         </li>
         <li>
-          <Link className="text-yellow-600 hover:text-yellow-900">
-            Blog
-          </Link>
+          <Link className="text-yellow-600 hover:text-yellow-900">Blog</Link>
         </li>
         <li>
           <Link className="text-yellow-600 hover:text-yellow-900">
@@ -75,9 +79,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link className="text-yellow-600 hover:text-yellow-900">
-            Contact
-          </Link>
+          <Link className="text-yellow-600 hover:text-yellow-900">Contact</Link>
         </li>
       </ul>
     </nav>

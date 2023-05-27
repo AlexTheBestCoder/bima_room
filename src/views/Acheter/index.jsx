@@ -14,7 +14,7 @@ const Product = ({ product }) => {
   return (
     <div className="product">
       <img src={product.image} alt={product.title} />
-      <h3>{product.title}</h3>
+      <h3 translate="no">{product.title}</h3>
       <p>{product.price}</p>
     </div>
   );
@@ -118,8 +118,8 @@ const ProductList = () => {
           />
           <select value={filterCategory} onChange={handleCategoryChange}>
             <option value="">Toutes les catégories</option>
-            <option value="press_on_nails">Press On Nails</option>
-            <option value="lips_booster_creme">Lips Booster Crème</option>
+            <option value="press_on_nails" translate="no">Press On Nails</option>
+            <option value="lips_booster_creme"><span translate="no">Lips Booster</span> Crème</option>
           </select>
         </div>
         <br />

@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './views/Home'
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {Route, Routes } from 'react-router-dom'
 import ProductList from './views/Acheter'
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <div className='App'>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/acheter' element={<ProductList />} />
+        <Route path='/boutique' element={<ProductList />} />
       </Routes>
     </div>
   )
